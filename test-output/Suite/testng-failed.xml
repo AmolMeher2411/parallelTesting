@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="ie"/>
+  <test parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="CrossBrowserTesting.CBT">
+        <methods>
+          <include name="teardown"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="verifypage"/>
+        </methods>
+      </class> <!-- CrossBrowserTesting.CBT -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
